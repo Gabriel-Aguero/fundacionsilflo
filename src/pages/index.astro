@@ -1,25 +1,60 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import About from "../components/about.astro";
+import Capacitaciones from "../components/capacitaciones.astro";
 ---
 
-<Layout title="Fundación SilFlo">
+<Layout
+  title="Fundación Académica Silvia Flores"
+  description="La Fundación Silvia Flores promueve la Educación en el ámbito de la salud"
+>
   <main>
     <section
-      class="w-full flex-col gap-x-24 justify-center items-center mx-auto lg:w-[740px] py-10 lg:flex lg:flex-row"
+      class="relative bg-[url(./BANNER.JPG)] bg-cover bg-center bg-no-repeat opacity-70"
     >
-      <div class="flex flex-col justify-around gap-y-10">
-        <h1 class="text-black text-5xl font-bold text-center">
-          Fundacion Academica Silvia Flores
-        </h1>
-        <h2 class="text-2xl text-black font-semibold text-pretty text-center">
-          Promovemos la Eduacion en el ambito de la Salud
-        </h2>
+      <div
+        class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+      >
       </div>
-      <img
-        class="w-[650px] h-[450px] rounded-xl shadow-2xl shadow-cyan-950"
-        src="BANNER.JPG"
-        alt=""
-      />
+
+      <div
+        class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+      >
+        <div
+          class="font-bold max-w-xl text-center ltr:sm:text-left rtl:sm:text-right"
+        >
+          <h1 class="text-3xl font-extrabold sm:text-5xl">
+            Fundación Académica
+
+            <strong class="block font-extrabold text-"> Silvia Flores </strong>
+          </h1>
+
+          <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+            ¡Bienvenido a la Fundación SILFLO, donde promovemos la educación en
+            el ámbito de la salud
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4 text-center">
+            <a
+              href="#"
+              class="block w-full rounded bg-cyan-400 px-12 py-3 text-sm font-medium text-white shadow hover:bg-cyan-700 focus:outline-none focus:ring active:bg-cyan-400 sm:w-auto"
+            >
+              Mas información
+            </a>
+
+            <a
+              href="#"
+              class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-cyan-400 shadow hover:text-cyan-700 focus:outline-none focus:ring active:text-cyan-400 sm:w-auto"
+            >
+              Contáctanos
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- hero -->
+    <About />
+    <Capacitaciones />
   </main>
 </Layout>

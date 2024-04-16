@@ -1,0 +1,38 @@
+---
+import CapacitacionesItems from "./CapacitacionesItems.astro";
+
+const CURSO = [
+  {
+    category: "Presencial",
+    title: "Técnico en Ergometría y Electrocardiograma",
+    description: "Nuevo curso de formación y empleo",
+    images: "/galeria1.jpg",
+  },
+  {
+    category: "Presencial",
+    title: "Asistente de Fonoaudiología",
+    description: "Nuevo curso para conseguir trabajo",
+    images: "/galeria1.jpg",
+  },
+  {
+    category: "Presencial",
+    title: "Asistente de Fonoaudiología",
+    description: "Nuevo curso para conseguir trabajo",
+    images: "/galeria1.jpg",
+  },
+  {
+    category: "Presencial",
+    title: "Asistente de Fonoaudiología",
+    description: "Nuevo curso para conseguir trabajo",
+    images: "/galeria1.jpg",
+  },
+];
+---
+
+<div
+  class="flex flex-col gap-4 p-5 justify-center items-center md:flex md:flex-row md:flex-wrap"
+>
+  {CURSO.map((curso) => <CapacitacionesItems {...curso} />)}
+</div>
+
+<!--  -->
