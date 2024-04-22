@@ -1,0 +1,23 @@
+---
+export interface Props {
+  icon: string;
+  imagen:string;
+  title: string;
+  description: string;
+}
+
+const { icon, imagen, title, description } = Astro.props;
+---
+
+<a
+  class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-gray-800 hover:shadow-gray-800"
+  href="#"
+>
+{imagen}
+
+<h2 class="mt-4 text-xl font-bold text-gray-900">{title}</h2>
+
+  <p class="mt-1 text-sm text-gray-900">
+    {description}
+  </p>
+</a>

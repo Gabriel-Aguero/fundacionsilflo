@@ -1,38 +1,71 @@
 ---
+import type { Code } from "astro:components";
 import CapacitacionesItems from "./CapacitacionesItems.astro";
+import Wave from "./icons/Wave.astro";
 
 const CURSO = [
   {
     category: "Presencial",
-    title: "Técnico en Ergometría y Electrocardiograma",
+    title: "Técnico en Ergometría",
     description: "Nuevo curso de formación y empleo",
-    images: "/galeria1.jpg",
+    images: "/src/images/galeria1.jpg",
   },
   {
     category: "Presencial",
     title: "Asistente de Fonoaudiología",
     description: "Nuevo curso para conseguir trabajo",
-    images: "/galeria1.jpg",
+    images: "/src/images/galeria1.jpg",
   },
   {
     category: "Presencial",
     title: "Asistente de Fonoaudiología",
     description: "Nuevo curso para conseguir trabajo",
-    images: "/galeria1.jpg",
+    images: "/src/images/galeria1.jpg",
   },
   {
     category: "Presencial",
     title: "Asistente de Fonoaudiología",
     description: "Nuevo curso para conseguir trabajo",
-    images: "/galeria1.jpg",
+    images: "/src/images/galeria1.jpg",
+  },
+  {
+    category: "Presencial",
+    title: "Asistente de Fonoaudiología",
+    description: "Nuevo curso para conseguir trabajo",
+    images: "/src/images/galeria1.jpg",
+  },
+  {
+    category: "Presencial",
+    title: "Asistente de Fonoaudiología",
+    description: "Nuevo curso para conseguir trabajo",
+    images: "/src/images/galeria1.jpg",
   },
 ];
 ---
 
-<div
-  class="flex flex-col gap-4 p-5 justify-center items-center md:flex md:flex-row md:flex-wrap"
->
-  {CURSO.map((curso) => <CapacitacionesItems {...curso} />)}
+<div class="bg-white/75" id="capacitaciones">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col">
+      <div class="h-1 bg-gray-900 rounded overflow-hidden">
+        <div class="w-24 h-full bg-indigo-500"></div>
+      </div>
+      <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12 text-gray-900">
+        <h1 class="sm:w-2/5 font-medium title-font text-2xl mb-2 sm:mb-0">
+          Fundación SILFLO te capacita
+        </h1>
+        <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
+          El Sistema de Aula invertida de Fundación SILFLO, te va a convertir en
+          un experto aprendiz del área que te estés formando.
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex flex-wrap p-5 sm:-m-4 -mx-4 -mb-10 -mt-4 gap-10 justify-center"
+    >
+      {CURSO.map((curso) => <CapacitacionesItems {...curso} />)}
+    </div>
+  </div>
 </div>
-
-<!--  -->
+<div class="custom-shape-divider-bottom-1713505436">
+  <Wave />
+</div>

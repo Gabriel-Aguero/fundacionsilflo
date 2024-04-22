@@ -1,0 +1,121 @@
+---
+import Logo from "./icons/Logo.astro";
+import Instagram from "./icons/Instagram.astro";
+import Facebook from "./icons/Facebook.astro";
+import Twitter from "./icons/Twitter.astro";
+import TikTok from "./icons/TikTok.astro";
+import YouTube from "./icons/YouTube.astro";
+import Codigo from "./icons/Codigo.astro";
+import Whatsapp from "./icons/Whatsapp.astro";
+---
+
+<footer class="bg-[#0b9ba0] dark:bg-[#0b9ba0] py-20">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="flex flex-col items-center justify-center">
+      <div class="mb-2 md:mb-0">
+        <a href="https://fundacionsilflo.org" class="flex items-center">
+          <img
+            src="./Logo.png"
+            class="h-24 me-3"
+            alt="Logo de la Fundación Silvia Flores"
+          />
+        </a>
+      </div>
+
+      <div
+        class="flex flex-col mt-10 w-full gap-10 justify-between items-center text-center sm:flex sm:flex-row"
+      >
+        <div>
+          <h2
+            class="mb-6 text-xl font-bold text-white uppercase dark:text-white"
+          >
+            Contacto
+          </h2>
+          <ul class="text-white dark:text-white font-medium">
+            <a href="">
+              <li class="mb-4 flex justify-center items-center gap-2">
+                <Whatsapp class="w-6 h-6" />
+                <span>11-3900-8840</span>
+              </li>
+            </a>
+            <li>
+              <span>Montevideo 496 5to Piso Of. 51 C.A.B.A</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2
+            class="mb-6 text-xl font-bold text-white uppercase hover:text-slate-600"
+          >
+            Nuestras Redes Sociales
+          </h2>
+          <div class="flex mb-10 items-center justify-center">
+            <a href="#" class="text-white hover:text-slate-600">
+              <Facebook />
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a
+              href="https://www.instagram.com/fundacion_academica_silflo/"
+              class="text-white hover:text-slate-600 ms-5"
+            >
+              <Instagram />
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@fundacionsilflo"
+              class="text-white hover:text-slate-600 ms-5"
+            >
+              <TikTok />
+              <span class="sr-only">Tiktok</span>
+            </a>
+            <a
+              href="https://www.youtube.com/@fundacionsilflo"
+              class="text-white hover:text-slate-600 ms-5"
+            >
+              <YouTube class="w-6 h-6" />
+              <span class="sr-only">You Tube</span>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h2
+            class="mb-2 text-xl font-bold text-white uppercase dark:text-white"
+          >
+            Legal
+          </h2>
+          <ul class="text-white dark:text-white font-medium">
+            <li class="mb-4">
+              <a href="https://flowbite.com/" class="hover:underline"
+                >Política de privacidad</a
+              >
+            </li>
+            <li>
+              <a href="https://tailwindcss.com/" class="hover:underline"
+                >Términos &amp; Condiciones</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-white lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-around">
+      <span
+        class="flex flex-col items-center justify-center text-sm text-white font-medium sm:text-center"
+      >
+        © 2023 Fundación Académica Silvia Flores.
+      </span>
+      <div
+        class="flex mt-2 gap-2 text-white text-center items-center justify-center"
+      >
+        <Codigo />
+        <spa class="text-sm text-white sm:text-center font-medium"
+          >Creado por Gabriel Agüero</spa
+        >
+      </div>
+    </div>
+  </div>
+</footer>
