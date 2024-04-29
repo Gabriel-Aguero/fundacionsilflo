@@ -2,7 +2,10 @@ import animations from '@midudev/tailwind-animations'
 
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	content: [
+		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+		'./node_modules/tw-elements/js/**/*.js'
+	],
 	darkMode: 'class',
 	theme: {
 		extend: {
@@ -11,5 +14,7 @@ export default {
 			}
 		},
 	},
-	plugins: [animations],
+	plugins: [
+		animations,
+	]
 }

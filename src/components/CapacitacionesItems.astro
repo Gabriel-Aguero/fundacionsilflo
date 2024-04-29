@@ -1,42 +1,48 @@
 ---
 import ArrowRight from "./icons/ArrowRight.astro";
 export interface Props {
-  category: string;
-  title: string;
-  description: string;
-  images: string;
+  titulo: string;
+  categoria: string;
+  modalidad: string;
+  descripcion: string;
+  imagen: string;
 }
 
-const { category, title, description, images } = Astro.props;
+const { titulo, categoria, modalidad, descripcion, imagen } = Astro.props;
 ---
 
 <div
-  class="cursor-pointer p-3 w-full md:w-2/5 lg:w-1/4 sm:mb-0 mb-6 border-gray-400 border shadow-xl shadow-gray-500
+  class="cursor-pointer w-full md:w-2/5 lg:w-1/4 sm:mb-0 mb-6 bg-[#105a5f] hover:bg-[#11b8bb] border-[#0d7278] shadow-xl shadow-[#124b4f]
    transition duration-500 ease-in-out transform
-   overflow-clip sm:rounded-xl sm:group-hover:-translate-y-1
-   sm:group-hover:shadow-2xl sm:hover:border-gray-700
-   lg:hover:bg-gray-300/50
+   overflow-clip sm:group-hover:-translate-y-1
+   sm:group-hover:shadow-2xl sm:hover:border-[#0d7278]
    sm:h-full hover:md:scale-110 md:group-hover:scale-105"
 >
-  <div class="rounded-lg h-64 overflow-hidden relative">
+  <div class="h-64 overflow-hidden relative">
     <img
       alt="content"
-      class="object-cover object-top w-full h-56 transition duration-500 sm:h-full hover:md:scale-125 md:group-hover:scale-105"
+      class="object-cover object-center w-full h-56 transition duration-500 sm:h-full hover:md:scale-125 md:group-hover:scale-105"
       loading="lazy"
-      src={images}
+      src={imagen}
     />
   </div>
-  <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
-    {title}
-  </h2>
-  <p class="text-base text-gray-900 leading-relaxed mt-5">
-    {description}
-  </p>
-
+  <div
+    class="flex items-center justify-between mt-4 mx-4 text-xl font-light text-[#f0fdfc]"
+  >
+    <h2 class="text-xl font-bold text-[#f0fdfc] mt-2 mx-5">
+      {categoria}
+    </h2>
+    <p class="text-[#f0fdfc] text-center">
+      {modalidad}
+    </p>
+  </div>
   <a
     href="/capacitaciones"
-    class="text-indigo-500 inline-flex items-center mt-5 cursor-pointer"
-    >Más información
+    class="text-[#f0fdfc] font-bold mx-5 inline-flex gap-2 justify-start items-center my-4 cursor-pointer hover:text-[#032b30]"
+  >
     <ArrowRight />
+    <span class="text-center items-center hover:text-[#032b30]"
+      >Más información</span
+    >
   </a>
 </div>

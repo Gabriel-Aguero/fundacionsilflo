@@ -1,5 +1,6 @@
 ---
 import Arrow from "./icons/Arrow.astro";
+import Whatsapp from "./icons/Whatsapp.astro";
 ---
 
 <div data-dial-init class="fixed end-6 bottom-6 group">
@@ -15,9 +16,31 @@ import Arrow from "./icons/Arrow.astro";
       data-dial-trigger="click"
       aria-controls="speed-dial-menu-click"
       aria-expanded="false"
-      class="flex items-center justify-center text-white bg-[#146063] rounded-full w-14 h-14 hover:bg-[#0b9ba0d0] dark:bg-bg-[#0b9ba0] dark:hover:bg-[#0b9ba0d0] focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-bg-[#0b9ba0d0]"
+      class="flex items-center justify-center text-white bg-[#0f5c60] rounded-full w-14 h-14 hover:bg-[#032b30] dark:bg-bg-[#0b9ba0] dark:hover:bg-[#0b9ba0d0] focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-bg-[#0b9ba0d0]"
     >
       <Arrow />
+    </button>
+  </a>
+</div>
+<div data-dial-init class="fixed end-6 bottom-24 group">
+  <div
+    id="speed-dial-menu-click"
+    class="flex flex-col items-center mb-4 space-y-2"
+  >
+  </div>
+  <a
+    href="https://wa.me/541139008840?text=Gracias por comunicarte con nosotros enviános tu mensaje, te respondemos a la brevedad.!!!"
+    target="_blank"
+  >
+    <button
+      type="button"
+      data-dial-toggle="speed-dial-menu-click"
+      data-dial-trigger="click"
+      aria-controls="speed-dial-menu-click"
+      aria-expanded="false"
+      class="flex items-center justify-center text-white bg-[#0f5c60] rounded-full w-14 h-14 hover:bg-[#032b30] dark:bg-bg-[#0b9ba0] dark:hover:bg-[#0b9ba0d0] focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-bg-[#0b9ba0d0]"
+    >
+      <Whatsapp />
     </button>
   </a>
 </div>

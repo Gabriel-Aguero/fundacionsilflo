@@ -1,0 +1,257 @@
+[
+    {
+      "title": "Botón Gástrico",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "4 Clases con Certificación",
+      "imagen": "../src/Cursos/Salud-Presencial/boton-gastrico.png"
+    },
+    {
+      "title": "Técnica en Internación Domiciliaria",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Doble Certf.",
+      "imagen": "../src/Cursos/Salud-Presencial/domiciliaria.png"
+    },
+    {
+      "title": "Asistente Auxiliar",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Doble Certf.",
+      "imagen": "../src/Cursos/Salud-Presencial/emfermeria.png"
+    },
+    {
+      "title": "Enfermería Pediátrica",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Certf. Oficial",
+      "imagen": "../src/Cursos/Salud-Presencial/enfermeria-pediatria.png"
+    },
+    {
+      "title": "Técnico en Ergometría y Electrocardiograma",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Nuevo Curso",
+      "imagen": "../src/Cursos/Salud-Presencial/ergometria.png"
+    },
+    {
+      "title": "Extraccionista",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "8 Clases con Carnet Oficial",
+      "imagen": "../src/Cursos/Salud-Presencial/extraccionista.png"
+    },
+    {
+      "title": "Asistente de Fonoaudiología",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Nuevo Curso",
+      "imagen": "../src/Cursos/Salud-Presencial/fonoaudiologia.png"
+    },
+    {
+      "title": "Asistente de Quirófano",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Nuevo Curso",
+      "imagen": "../src/Cursos/Salud-Presencial/quirofano.png"
+    },
+    {
+      "title": "Signos Vitales",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "4 Clases con Certificación",
+      "imagen": "../src/Cursos/Salud-Presencial/signos-vitales.png"
+    },
+    {
+      "title": "Colocación de Sonda Vesical",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "4 Clases con Certificación",
+      "imagen": "../src/Cursos/Salud-Presencial/sonda-vesical.png"
+    },
+    {
+      "title": "Colocación de suero e Inyectables",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "8 Calses con Certificación",
+      "imagen": "../src/Cursos/Salud-Presencial/suero-inyectable.png"
+    },
+    {
+      "title": "Esp. Trastorno del Neurodesarrollo",
+      "categoria":"Psicologia",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/PSICOLOGIA/desarrollo.png"
+    },
+    {
+      "title": "Estimulacion Temprana infantojuvenil",
+      "categoria":"Psicologia",
+      "modalidad": "Online",
+      "descripcion": "Nuevo Curso",
+      "imagen": "../src/Cursos/PSICOLOGIA/estimulacion.png"
+    },
+    {
+      "title": "Juegos Lúdicos",
+      "categoria":"Psicologia",
+      "modalidad": "Online",
+      "descripcion": "Trastorno del Aprendizaje",
+      "imagen": "../src/Cursos/PSICOLOGIA/juegos.png"
+    },
+    {
+      "title": "Motricidad Fina",
+      "categoria":"Psicologia",
+      "modalidad": "Online",
+      "descripcion": "AVD - Actividades de la vida diaria",
+      "imagen": "../src/Cursos/PSICOLOGIA/motricidad.png"
+    },
+    {
+      "title": "Pedagogia",
+      "categoria":"Psicologia",
+      "modalidad": "Online",
+      "descripcion": "Montessori en Educación Especial",
+      "imagen": "../src/Cursos/PSICOLOGIA/pedagogia.png"
+    },
+    {
+      "title": "Psicologia",
+      "categoria":"Psicologia",
+      "modalidad": "Online",
+      "descripcion": "Curso Infanto Juvenil",
+      "imagen": "../src/Cursos/PSICOLOGIA/psicologia.png"
+    },
+    {
+      "title": "Psicopedagogia",
+      "categoria":"Psicologia",
+      "modalidad": "Online",
+      "descripcion": "Asistente y Aprendizaje",
+      "imagen": "../src/Cursos/PSICOLOGIA/psicopedagogia.png"
+    },
+    {
+      "title": "Terapia Ocupacional",
+      "categoria":"Psicologia",
+      "modalidad": "Online",
+      "descripcion": "Esp. en Pictogramas",
+      "imagen": "../src/Cursos/PSICOLOGIA/terapia-ocupacional.png"
+    },
+    {
+      "title": "Herramientas Digitales",
+      "categoria":"Tecnologia",
+      "modalidad": "Online",
+      "descripcion": "Para Adultos y Principiantes",
+      "imagen": "../src/Cursos/INGLES-DIGITALES/digital.png"
+    },
+    {
+      "title": "Inglés",
+      "categoria":"Idioma",
+      "modalidad": "Online",
+      "descripcion": "Nuevo Curso",
+      "imagen": "../src/Cursos/INGLES-DIGITALES/ingles.png"
+    },
+    {
+      "title": "AKM",
+      "categoria":"Kinesiologia",
+      "modalidad": "Online",
+      "descripcion": "Duracion 6 Meses",
+      "imagen": "../src/Cursos/KINESIO-Presencial-Virtual/akm.png"
+    },
+    {
+      "title": "Asistente en Kinesiología",
+      "categoria":"Kinesiologia",
+      "modalidad": "Online",
+      "descripcion": "Duración 6 Meses",
+      "imagen": "../src/Cursos/KINESIO-Presencial-Virtual/kinesio.png"
+    },
+    {
+      "title": "Kinesio Taping",
+      "categoria":"Kinesiologia",
+      "modalidad": "Online",
+      "descripcion":"Duración 6 Meses",
+      "imagen": "../src/Cursos/KINESIO-Presencial-Virtual/kinesio-taping.png"
+    },
+    {
+      "title": "Rejuvenecimiento Facial",
+      "categoria":"Kinesiologia",
+      "modalidad": "Online",
+      "descripcion": "Duración 8 Clases",
+      "imagen": "../src/Cursos/KINESIO-Presencial-Virtual/rejuvenecimiento.png"
+    },
+    {
+      "title": "Terapia Manual",
+      "categoria":"Kinesiologia",
+      "modalidad": "Online",
+      "descripcion": "Duracion 6 Meses",
+      "imagen": "../src/Cursos/KINESIO-Presencial-Virtual/terapia-manual.png"
+    },
+    {
+      "title": "Esp. en Adicciones",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-adicciones.png"
+    },
+    {
+      "title": "Esp. en Adolescencia",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-adolescencia.png"
+    },
+    {
+      "title": "Trastorno Alimenticios",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-alimenticios.png"
+    },
+    {
+      "title": "Esp. en Ansiedad y Depresión",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-ansiedad-depresion.png"
+    },
+    {
+      "title": "Autismo y TEA",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-autismo.png"
+    },
+    {
+      "title": "Esp. en Bulling Escolar",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-bulling-escolar.png"
+    },
+    {
+      "title": "Esp. en Ciberacoso",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-ciberacoso.png"
+    },
+    {
+      "title": "Esp. en ESI",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-esi.png"
+    },
+    {
+      "title": "Gerontológico",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-gerontologico-terapeutico.png"
+    },
+    {
+      "title": "Inclusión Escolar",
+      "categoria":"Acompañamiento Terapéutico",
+      "modalidad": "Online",
+      "descripcion": "Formación y empleo",
+      "imagen": "../src/Cursos/ACOMPAÑANTE-Virtual/AT-inclusion-escolar.png"
+    }
+       
+ ]
+  
+ 
