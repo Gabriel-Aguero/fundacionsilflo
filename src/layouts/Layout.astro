@@ -27,36 +27,35 @@ const { title, description } = Astro.props;
       <ArrowNav />
     </main>
     <Footer />
-
-    
-    <style is:global>
-      </body > * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
-      :root {
-        color-scheme: dark light;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
-      html {
-        scroll-behavior: smooth;
-        font-family: system-ui, sans-serif;
-      }
-      body {
-        background: #fdfdfd;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-      }
-
-      @media (prefers-reduce-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-      }
-    </style>
   </body>
 </html>
+
+<style is:global>
+  </body > * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  :root {
+    color-scheme: dark light;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: system-ui, sans-serif;
+  }
+  body {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  @media (prefers-reduce-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+</style>

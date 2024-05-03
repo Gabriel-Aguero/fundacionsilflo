@@ -14,6 +14,7 @@ import TikTok from "../components/icons/TikTok.astro";
 import YouTube from "../components/icons/YouTube.astro";
 import Codigo from "../components/icons/Codigo.astro";
 import Whatsapp from "../components/icons/Whatsapp.astro";
+import Galeria from "../components/Galeria.astro";
 ---
 
 <Layout
@@ -172,42 +173,5 @@ import Whatsapp from "../components/icons/Whatsapp.astro";
     </div>
   </section>
 
-  <section
-    class="mx-auto max-w-screen-xl py-10 px-8 grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-4"
-  >
-    <div
-      class="border-2 border-transparent shadow-slate-700 transition duration-500 hover:ease-in-out hover:scale-105 rounded-lg"
-    >
-      <img class="rounded-lg w-96 h-72" src="/src/images/GALERIA2.jpg" alt="" />
-    </div>
-    <div
-      class="border-2 border-transparent shadow-slate-700 transition duration-500 hover:ease-in-out hover:scale-105 rounded-lg"
-    >
-      <img class="rounded-lg w-96 h-72" src="/src/images/GALERIA8.jpg" alt="" />
-    </div>
-    <div
-      class="border-2 border-transparent shadow-slate-700 transition duration-500 hover:ease-in-out hover:scale-105 rounded-lg"
-    >
-      <img class="rounded-lg w-96 h-72" src="/src/images/GALERIA9.jpg" alt="" />
-    </div>
-    <div
-      class="border-2 border-transparent shadow-slate-700 transition duration-500 hover:ease-in-out hover:scale-105 rounded-lg"
-    >
-      <img
-        class="rounded-lg w-96 h-72"
-        src="/src/images/GALERIA10.jpg"
-        alt=""
-      />
-    </div>
-    <div
-      class="border-2 border-transparent shadow-slate-700 transition duration-500 hover:ease-in-out hover:scale-105 rounded-lg"
-    >
-      <img class="rounded-lg w-96 h-72" src="/src/images/GALERIA2.jpg" alt="" />
-    </div>
-    <div
-      class="border-2 border-transparent shadow-slate-700 transition duration-500 hover:ease-in-out hover:scale-105 rounded-lg"
-    >
-      <img class="rounded-lg w-96 h-72" src="/src/images/GALERIA5.jpg" alt="" />
-    </div>
-  </section>
+   <Galeria />
 </Layout>

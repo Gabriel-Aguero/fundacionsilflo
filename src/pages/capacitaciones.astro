@@ -3,13 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import Educacion from "../components/icons/Educacion.astro";
 import db from "../components/DB/db.json";
 
-function filterByCategory(categoria) {
-  if (categoria === "todos") {
-    return [...db];
-  } else {
-    return db.filter((curso) => curso.categoria === categoria);
-  }
-}
 ---
 
 <Layout
