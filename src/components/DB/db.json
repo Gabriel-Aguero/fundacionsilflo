@@ -1,5 +1,47 @@
 [
     {
+      "title": "Kinesiología Respiratoria",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Duración 4 Meses",
+      "imagen": "../src/Cursos/Kinesio/ktr.webp"
+    },
+    {
+      "title": "Terapia Manual",
+      "categoria":"Kinesio",
+      "modalidad": "Presencial",
+      "descripcion": "Duración 3 Meses",
+      "imagen": "../src/Cursos/Kinesio/terpia-manual.webp"
+    },
+    {
+      "title": "Cuidador Domiciliario",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Junio 2024 - Gratis",
+      "imagen": "../src/Cursos/Salud/cuidado-domiciliario.webp"
+    },
+    {
+      "title": "Asistente de Fonoaudiología",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Inicia 10 de Mayo",
+      "imagen": "../src/Cursos/Salud/fonoaudiologia-asistente.webp"
+    },
+    {
+      "title": "Terapia Ocupacional",
+      "categoria":"Kinesio",
+      "modalidad": "Presencial",
+      "descripcion": "Inicia 9 de Mayo",
+      "imagen": "../src/Cursos/Kinesio/terapia-ocupacional.webp"
+    },
+    {
+      "title": "Asistente de Fonoaudiología",
+      "categoria":"Salud",
+      "modalidad": "Presencial",
+      "descripcion": "Inicia 10 de Mayo",
+      "imagen": "../src/Cursos/Salud/fonoaudiologia-nuevo.webp"
+    },    
+    {
       "title": "Botón Gástrico",
       "categoria":"Salud",
       "modalidad": "Presencial",

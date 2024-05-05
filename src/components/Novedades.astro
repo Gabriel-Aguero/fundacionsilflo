@@ -1,38 +1,7 @@
 ---
 import Check from "./icons/Check.astro";
+import Donaciones from "../components/DB/dbDonaciones.json"
 
-const DATA = [
-  {
-    title: "Egresados",
-    descripcion:
-      "El  día 4 de Diciembre del año 2023 en Puerto Madero- CABA Buenos Aires, , Nuestra  Fundación Académica Silvia Flores, llevó a cabo la realización del Acto de Graduación del cierre del ciclo lectivo 2023.",
-  },
-  {
-    title: "Aula de Simulación clínica",
-    descripcion:
-      "Nuestra fundación SILFLO, cuenta con un espacio  de Simulación Clínica, destinado a la formación y prácticas académicas , donde el alumno desarrolla su entrenamiento práctico, como si estuviera trabajando en un sector de internación domiciliaria, clínica u hospitalaria.",
-  },
-  {
-    title: "Donaciones",
-    descripcion:
-      "Durante el año 2023, hemos recibido diferentes donaciones de material descartable, instrumental para prácticas, sillas de ruedas entre otros. Agradecemos a nuestra alumna  Sra. Liz, Amarilla por sus generosas donaciones.",
-  },
-  {
-    title: "Uniformes institucionales",
-    descripcion:
-      "El diseño de  nuestros ambos académicos , están diseñados y confeccionados por la Sra Pamela Avila, estudiante de nuestra intuición.",
-  },
-  {
-    title: "Educacion a Distancia",
-    descripcion:
-      "El Sistema de Aula invertida de Fundación SILFLO, te va a convertir en un experto aprendiz del área que te estés formando. Durante el 2022 y 2023, se han recibido 267, alumnos adultos entre los cuales 230 eran Secundario de Adultos y 37 estudiantes adultos  del Primario.",
-  },
-  {
-    title: "Jornadas de R.C.P y DEA",
-    descripcion:
-      "En colaboración con un equipo experto y comprometido, ofrecemos clases y jornadas de Reanimación Cardiopulmonar (RCP) diseñadas para capacitar a individuos y grupos en habilidades vitales de primeros auxilios.",
-  },
-];
 ---
 
 <section
@@ -74,14 +43,14 @@ const DATA = [
       class="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
     >
       {
-        DATA.map((data) => (
+        Donaciones.map((data) => (
           <div class="flex items-start gap-4">
             <span class="shrink-0 rounded-lg bg-gray-800 p-4">
               <Check />
             </span>
 
             <div>
-              <h2 class="text-lg font-bold text-gray-900">{data.title}</h2>
+              <h2 class="text-lg font-bold text-gray-900">{data.titulo}</h2>
 
               <p class="mt-1 text-sm text-gray-900">{data.descripcion}</p>
             </div>

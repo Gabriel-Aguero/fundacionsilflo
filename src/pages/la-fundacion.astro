@@ -2,19 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Mision from "../components/icons/Mision.astro";
 import Filosofia from "../components/icons/Filosofia.astro";
-import Vision from "../components/icons/Vision.astro";
 import Educacion from "../components/icons/Educacion.astro";
 import Oportunidades from "../components/icons/Oportunidades.astro";
 import CoinOff from "../components/icons/CoinOff.astro";
 import Iniciativas from "../components/icons/Iniciativas.astro";
-import Instagram from "../components/icons/Instagram.astro";
-import Facebook from "../components/icons/Facebook.astro";
-import Twitter from "../components/icons/Twitter.astro";
-import TikTok from "../components/icons/TikTok.astro";
-import YouTube from "../components/icons/YouTube.astro";
-import Codigo from "../components/icons/Codigo.astro";
-import Whatsapp from "../components/icons/Whatsapp.astro";
 import Galeria from "../components/Galeria.astro";
+import dbAbout from "../components/DB/dbAbout.json";
+
 ---
 
 <Layout
@@ -33,7 +27,7 @@ import Galeria from "../components/Galeria.astro";
         <div class="relative h-64 overflow-hidden sm:h-80 lg:h-full">
           <img
             alt="Foto de la fundacion silvia flores, dando un curso"
-            src="/src/images/FOTO-SILFLO.JPG"
+            src="/src/images/img-7.jpg"
             class="absolute inset-0 h-full w-full object-cover"
           />
         </div>
@@ -82,96 +76,30 @@ import Galeria from "../components/Galeria.astro";
       class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4"
     >
       <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <a
-          class="block rounded-xl border border-[#0d7378] p-8 shadow-xl transition duration-700 hover:scale-110 shadow-[#0d7378] hover:shadow-[#032b30]"
-          href="#"
-        >
-          <Mision />
-          <h2 class="mt-4 text-xl font-bold text-[#032b30]">Mision</h2>
-          <p class="mt-1 text-md text-[#0f5c60] font-semibold">
-            La Fundación Académica Silvia Flores tiene la misión de aportar
-            valor al mundo de la Salud en las áreas de Prevención y Educación
-            Sanitaria, Rehabilitación y Humanidades
-          </p>
-        </a>
-        <a
-          class="block rounded-xl border border-[#0d7378] p-8 shadow-xl transition duration-700 hover:scale-110 shadow-[#0d7378] hover:shadow-[#032b30]"
-          href="#"
-        >
-          <Filosofia />
-          <h2 class="mt-4 text-xl font-bold text-[#032b30]">Filosofia</h2>
-          <p class="mt-1 text-md text-[#0f5c60] font-semibold">
-            Nuestra filosofía es potenciar el trabajo creativo, ofertando
-            formación y actividades de máxima calidad que añadan valor y
-            enriquezcan el sistema sanitario
-          </p>
-        </a>
-        <a
-          class="block rounded-xl border border-[#0d7378] p-8 shadow-xl transition duration-700 hover:scale-110 shadow-[#0d7378] hover:shadow-[#032b30]"
-          href="#"
-        >
-          <Oportunidades />
-          <h2 class="mt-4 text-xl font-bold text-[#032b30]">
-            Promoviendo Oportunidades
-          </h2>
-          <p class="mt-1 text-md text-[#0f5c60] font-semibold">
-            Trabajamos para que los estudiantes, jóvenes y adultos, puedan
-            potenciar sus trayectorias de vida, tanto a nivel personal como
-            profesional
-          </p>
-        </a>
-        <a
-          class="block rounded-xl border border-[#0d7378] p-8 shadow-xl transition duration-700 hover:scale-110 shadow-[#0d7378] hover:shadow-[#032b30]"
-          href="#"
-        >
-          <CoinOff />
-          <h2 class="mt-4 text-xl font-bold text-[#032b30]">
-            Sin Ánimo de Lucro
-          </h2>
-          <p class="mt-1 text-md text-[#0f5c60] font-semibold">
-            Desde nuestra fundación en 2023, operamos como una entidad sin ánimo
-            de lucro. Tu apoyo hace la diferencia
-          </p>
-        </a>
-        <a
-          class="block rounded-xl border border-[#0d7378] p-8 shadow-xl transition duration-700 hover:scale-110 shadow-[#0d7378] hover:shadow-[#032b30]"
-          href="#"
-        >
-          <Educacion />
-          <h2 class="mt-4 text-xl font-bold text-[#032b30]">Educación</h2>
-          <p class="mt-1 text-md text-[#0f5c60] font-semibold">
-            Trabajamos para que los estudiantes, jóvenes y adultos, puedan
-            potenciar sus trayectorias de vida, tanto a nivel personal como
-            profesional
-          </p>
-        </a>
-        <a
-          class="block rounded-xl border border-[#0d7378] p-8 shadow-xl transition duration-700 hover:scale-110 shadow-[#0d7378] hover:shadow-[#032b30]"
-          href="#"
-        >
-          <Iniciativas />
-          <h2 class="mt-4 text-xl font-bold text-[#032b30]">
-            Nuestras Iniciativas
-          </h2>
-          <p class="mt-1 text-md text-[#0f5c60] font-semibold">
-            Descubre más sobre nuestras iniciativas, programas y cómo puedes
-            involucrarte para construir un futuro más saludable y equitativo
-            para todos
-          </p>
-        </a>
+        {
+          dbAbout.map((item) => (
+            <a
+              class="block rounded-xl border border-[#0d7378] p-8 shadow-xl transition duration-700 hover:scale-110 shadow-[#0d7378] hover:shadow-[#032b30]"
+              href="#"
+            >
+              {item.icon === "Mision" && <Mision />}
+              {item.icon === "Filosofia" && <Filosofia />}
+              {item.icon === "Educacion" && <Educacion />}
+              {item.icon === "Oportunidades" && <Oportunidades />}
+              {item.icon === "CoinOff" && <CoinOff />}
+              {item.icon === "Iniciativas" && <Iniciativas />}
+              <h2 class="mt-4 text-xl font-bold text-[#032b30]">
+                {item.titulo}
+              </h2>
+              <p class="mt-1 text-md text-[#0f5c60] font-semibold">
+                {item.descripcion}
+              </p>
+            </a>
+          ))
+        }       
       </div>
-      <!-- <div class="mt-12 text-center">
-        <a
-          href="/la-fundacion"
-          class="inline-block rounded bg-[#0b9ba0] px-12 py-3 text-sm font-medium
-           text-white transition hover:bg-[#0b9ba0c5] focus:outline-none focus:ring
-           focus:ring-yellow-400"
-        >
-          Más sobre nosotros
-        </a>
-      </div> -->
     </div>
   </section>
 
-   <Galeria />
+  <Galeria />
 </Layout>

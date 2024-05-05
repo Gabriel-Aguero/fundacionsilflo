@@ -1,0 +1,32 @@
+[
+    {
+      "titulo": "Mision",
+      "descripcion": "La Fundación Académica Silvia Flores tiene la misión de aportar valor al mundo de la Salud en las áreas de Prevención y Educación Sanitaria, Rehabilitación y Humanidades",
+      "icon": "Mision"
+    },
+    {
+      "titulo": "Filosofia",
+      "descripcion":"Nuestra filosofía es potenciar el trabajo creativo, ofertando formación y actividades de máxima calidad que añadan valor y enriquezcan el sistema sanitario",
+      "icon": "Filosofia"
+    },
+    {
+      "titulo": "Promoviendo Oportunidades",
+      "descripcion": "Trabajamos para que los estudiantes, jóvenes y adultos, puedan potenciar sus trayectorias de vida, tanto a nivel personal como profesional",
+      "icon": "Oportunidades"
+    },
+    {
+      "titulo": "Sin Ánimo de Lucro",
+      "descripcion": "Desde nuestra fundación en 2023, operamos como una entidad sin ánimo de lucro. Tu apoyo hace la diferencia",
+      "icon": "CoinOff"
+    },
+    {
+      "titulo": "Educación",
+      "descripcion": "Trabajamos para que los estudiantes, jóvenes y adultos, puedan potenciar sus trayectorias de vida, tanto a nivel personal como profesional",
+      "icon": "Educacion"
+    },
+    {
+      "titulo": "Nuestras Iniciativas",
+      "descripcion": "Descubre más sobre nuestras iniciativas, programas y cómo puedes involucrarte para construir un futuro más saludable y equitativo para todos",
+      "icon": "Iniciativas"
+    }
+  ]
