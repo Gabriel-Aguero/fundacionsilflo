@@ -1,5 +1,5 @@
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_BvI3dcEK.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_BIOxcTGb.mjs';
 import { A as AstroError, R as ResponseSentError, l as MiddlewareNoDataOrNextCalled, n as MiddlewareNotAResponse, o as ROUTE_TYPE_HEADER, p as REROUTE_DIRECTIVE_HEADER, G as GetStaticPathsRequired, q as InvalidGetStaticPathsReturn, t as InvalidGetStaticPathsEntry, u as GetStaticPathsExpectedParams, v as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, D as DEFAULT_404_COMPONENT, N as NoMatchingStaticPathFound, w as PrerenderDynamicEndpointPathCollide, x as ReservedSlotName, y as renderSlotToString, z as renderJSX, B as chunkToString, C as LocalsNotAnObject, H as clientLocalsSymbol, J as clientAddressSymbol$1, K as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, O as ASTRO_VERSION, Q as responseSentSymbol$1, T as AstroResponseHeadersReassigned, V as renderPage, W as renderEndpoint, X as REROUTABLE_STATUS_CODES } from './chunks/astro_ZkQBdAak.mjs';
 import { serialize, parse } from 'cookie';
 import { e as appendForwardSlash, j as joinPaths, t as trimSlashes, f as fileExtension, s as slash, p as prependForwardSlash, g as removeTrailingForwardSlash, h as collapseDuplicateSlashes } from './chunks/astro/assets-service_Cckl8ECD.mjs';
@@ -2024,7 +2024,7 @@ const _page1 = () => import('./chunks/capacitaciones_CTgEmiVk.mjs');
 const _page2 = () => import('./chunks/contacto_BbNyyHTm.mjs');
 const _page3 = () => import('./chunks/la-fundacion_vtxTrZZt.mjs');
 const _page4 = () => import('./chunks/novedades_D5HYykdr.mjs');
-const _page5 = () => import('./chunks/index_Don4SMX4.mjs');
+const _page5 = () => import('./chunks/index_BFRUZxBA.mjs');
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/capacitaciones.astro", _page1],
@@ -2040,7 +2040,7 @@ const _manifest = Object.assign(manifest, {
     middleware: onRequest
 });
 const _args = {
-    "middlewareSecret": "6c2c839c-735b-434f-871e-59ff496d8b53",
+    "middlewareSecret": "9eb37173-3c34-4bc3-b46c-a791005b6e0d",
     "skewProtection": false
 };
 const _exports = createExports(_manifest, _args);

@@ -114,7 +114,7 @@ const $$Astro$6 = createAstro();
 const $$Hero = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Hero;
-  return renderTemplate`${maybeRenderHead()}<section class="w-full relative bg-slate-900"> <video class="w-full shadow-lg opacity-30" src="/public/Presentación.mp4" autoplay loop muted></video> <div class="absolute w-64 mx-5 bottom-0 text-center flex flex-col md:w-full top-[50%] rigth-[50%]"> <h1 class="text-[#11b8bb] text-2xl font-extrabold md:text-5xl">
+  return renderTemplate`${maybeRenderHead()}<section class="w-full relative bg-slate-900"> <video class="w-full shadow-lg opacity-30" src="/Presentación.mp4" autoplay loop muted></video> <div class="absolute w-64 mx-5 bottom-0 text-center flex flex-col md:w-full top-[50%] rigth-[50%]"> <h1 class="text-[#11b8bb] text-2xl font-extrabold md:text-5xl">
 Fundación Académica Silvia Flores
 </h1> <p class="hidden text-2xl py-5 font-semibold text-white px-2 md:block">
 Potenciamos el Crecimiento de las Personas Fomentando la Igualdad de Oportunidades !!!

@@ -1,5 +1,5 @@
 {
-	"runtime": "nodejs16.x",
+	"runtime": "nodejs20.x",
 	"handler": "media/gaby/GABY/Programacion/Proyectos/fundacionsilflo/.vercel/output/_functions/entry.mjs",
 	"launcherType": "Nodejs",
 	"supportsResponseStreaming": true
