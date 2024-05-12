@@ -4,294 +4,294 @@
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Duración 4 Meses",
-      "imagen": "../src/Cursos/Kinesio/ktr.webp"
+      "imagen": "/Cursos/Kinesio/ktr.webp"
     },
     {
       "title": "Terapia Manual",
       "categoria":"Kinesio",
       "modalidad": "Presencial",
       "descripcion": "Duración 3 Meses",
-      "imagen": "../src/Cursos/Kinesio/terpia-manual.webp"
+      "imagen": "/Cursos/Kinesio/terpia-manual.webp"
     },
     {
       "title": "Cuidador Domiciliario",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Junio 2024 - Gratis",
-      "imagen": "../src/Cursos/Salud/cuidado-domiciliario.webp"
+      "imagen": "/Cursos/Salud/cuidado-domiciliario.webp"
     },
     {
       "title": "Asistente de Fonoaudiología",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Inicia 10 de Mayo",
-      "imagen": "../src/Cursos/Salud/fonoaudiologia-asistente.webp"
+      "imagen": "/Cursos/Salud/fonoaudiologia-asistente.webp"
     },
     {
       "title": "Terapia Ocupacional",
       "categoria":"Kinesio",
       "modalidad": "Presencial",
       "descripcion": "Inicia 9 de Mayo",
-      "imagen": "../src/Cursos/Kinesio/terapia-ocupacional.webp"
+      "imagen": "/Cursos/Kinesio/terapia-ocupacional.webp"
     },
     {
       "title": "Asistente de Fonoaudiología",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Inicia 10 de Mayo",
-      "imagen": "../src/Cursos/Salud/fonoaudiologia-nuevo.webp"
+      "imagen": "/Cursos/Salud/fonoaudiologia-nuevo.webp"
     },    
     {
       "title": "Botón Gástrico",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "4 Clases con Certificación",
-      "imagen": "../src/Cursos/Salud/boton-gastrico.webp"
+      "imagen": "/Cursos/Salud/boton-gastrico.webp"
     },
     {
       "title": "Técnica en Internación Domiciliaria",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Doble Certf.",
-      "imagen": "../src/Cursos/Salud/domiciliaria.webp"
+      "imagen": "/Cursos/Salud/domiciliaria.webp"
     },
     {
       "title": "Asistente Auxiliar",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Doble Certf.",
-      "imagen": "../src/Cursos/Salud/enfermeria.webp"
+      "imagen": "/Cursos/Salud/enfermeria.webp"
     },
     {
       "title": "Enfermería Pediátrica",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Certf. Oficial",
-      "imagen": "../src/Cursos/Salud/enfermeria-pediatria.webp"
+      "imagen": "/Cursos/Salud/enfermeria-pediatria.webp"
     },
     {
       "title": "Técnico en Ergometría y Electrocardiograma",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Nuevo Curso",
-      "imagen": "../src/Cursos/Salud/ergometria.webp"
+      "imagen": "/Cursos/Salud/ergometria.webp"
     },
     {
       "title": "Extraccionista",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "8 Clases con Carnet Oficial",
-      "imagen": "../src/Cursos/Salud/extraccionista.webp"
+      "imagen": "/Cursos/Salud/extraccionista.webp"
     },
     {
       "title": "Asistente de Fonoaudiología",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Nuevo Curso",
-      "imagen": "../src/Cursos/Salud/fonoaudiologia.webp"
+      "imagen": "/Cursos/Salud/fonoaudiologia.webp"
     },
     {
       "title": "Asistente de Quirófano",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "Nuevo Curso",
-      "imagen": "../src/Cursos/Salud/quirofano.webp"
+      "imagen": "/Cursos/Salud/quirofano.webp"
     },
     {
       "title": "Signos Vitales",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "4 Clases con Certificación",
-      "imagen": "../src/Cursos/Salud/signos-vitales.webp"
+      "imagen": "/Cursos/Salud/signos-vitales.webp"
     },
     {
       "title": "Colocación de Sonda Vesical",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "4 Clases con Certificación",
-      "imagen": "../src/Cursos/Salud/sonda-vesical.webp"
+      "imagen": "/Cursos/Salud/sonda-vesical.webp"
     },
     {
       "title": "Colocación de suero e Inyectables",
       "categoria":"Salud",
       "modalidad": "Presencial",
       "descripcion": "8 Calses con Certificación",
-      "imagen": "../src/Cursos/Salud/suero-inyectable.webp"
+      "imagen": "/Cursos/Salud/suero-inyectable.webp"
     },
     {
       "title": "Esp. Trastorno del Neurodesarrollo",
       "categoria":"Psicologia",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Psicologia/desarrollo.webp"
+      "imagen": "/Cursos/Psicologia/desarrollo.webp"
     },
     {
       "title": "Estimulacion Temprana infantojuvenil",
       "categoria":"Psicologia",
       "modalidad": "Online",
       "descripcion": "Nuevo Curso",
-      "imagen": "../src/Cursos/Psicologia/estimulacion.webp"
+      "imagen": "/Cursos/Psicologia/estimulacion.webp"
     },
     {
       "title": "Juegos Lúdicos",
       "categoria":"Psicologia",
       "modalidad": "Online",
       "descripcion": "Trastorno del Aprendizaje",
-      "imagen": "../src/Cursos/Psicologia/juegos.webp"
+      "imagen": "/Cursos/Psicologia/juegos.webp"
     },
     {
       "title": "Motricidad Fina",
       "categoria":"Psicologia",
       "modalidad": "Online",
       "descripcion": "AVD - Actividades de la vida diaria",
-      "imagen": "../src/Cursos/Psicologia/motricidad.webp"
+      "imagen": "/Cursos/Psicologia/motricidad.webp"
     },
     {
       "title": "Pedagogia",
       "categoria":"Psicologia",
       "modalidad": "Online",
       "descripcion": "Montessori en Educación Especial",
-      "imagen": "../src/Cursos/Psicologia/pedagogia.webp"
+      "imagen": "/Cursos/Psicologia/pedagogia.webp"
     },
     {
       "title": "Psicologia",
       "categoria":"Psicologia",
       "modalidad": "Online",
       "descripcion": "Curso Infanto Juvenil",
-      "imagen": "../src/Cursos/Psicologia/psicologia.webp"
+      "imagen": "/Cursos/Psicologia/psicologia.webp"
     },
     {
       "title": "Psicopedagogia",
       "categoria":"Psicologia",
       "modalidad": "Online",
       "descripcion": "Asistente y Aprendizaje",
-      "imagen": "../src/Cursos/Psicologia/psicopedagogia.webp"
+      "imagen": "/Cursos/Psicologia/psicopedagogia.webp"
     },
     {
       "title": "Terapia Ocupacional",
       "categoria":"Psicologia",
       "modalidad": "Online",
       "descripcion": "Esp. en Pictogramas",
-      "imagen": "../src/Cursos/Psicologia/terapia-ocupacional.webp"
+      "imagen": "/Cursos/Psicologia/terapia-ocupacional.webp"
     },
     {
       "title": "Herramientas Digitales",
       "categoria":"Tecnologia",
       "modalidad": "Online",
       "descripcion": "Para Adultos y Principiantes",
-      "imagen": "../src/Cursos/Idioma-Tecno/digital.webp"
+      "imagen": "/Cursos/Idioma-Tecno/digital.webp"
     },
     {
       "title": "Inglés",
       "categoria":"Idioma",
       "modalidad": "Online",
       "descripcion": "Nuevo Curso",
-      "imagen": "../src/Cursos/Idioma-Tecno/ingles.webp"
+      "imagen": "/Cursos/Idioma-Tecno/ingles.webp"
     },
     {
       "title": "AKM",
       "categoria":"Kinesiologia",
       "modalidad": "Online",
       "descripcion": "Duracion 6 Meses",
-      "imagen": "../src/Cursos/Kinesio/akm.webp"
+      "imagen": "/Cursos/Kinesio/akm.webp"
     },
     {
       "title": "Asistente en Kinesiología",
       "categoria":"Kinesiologia",
       "modalidad": "Online",
       "descripcion": "Duración 6 Meses",
-      "imagen": "../src/Cursos/Kinesio/kinesio.webp"
+      "imagen": "/Cursos/Kinesio/kinesio.webp"
     },
     {
       "title": "Kinesio Taping",
       "categoria":"Kinesiologia",
       "modalidad": "Online",
       "descripcion":"Duración 6 Meses",
-      "imagen": "../src/Cursos/Kinesio/kinesio-taping.webp"
+      "imagen": "/Cursos/Kinesio/kinesio-taping.webp"
     },
     {
       "title": "Rejuvenecimiento Facial",
       "categoria":"Kinesiologia",
       "modalidad": "Online",
       "descripcion": "Duración 8 Clases",
-      "imagen": "../src/Cursos/Kinesio/rejuvenecimiento.webp"
+      "imagen": "/Cursos/Kinesio/rejuvenecimiento.webp"
     },
     {
       "title": "Terapia Manual",
       "categoria":"Kinesiologia",
       "modalidad": "Online",
       "descripcion": "Duracion 6 Meses",
-      "imagen": "../src/Cursos/Kinesio/terapia-manual.webp"
+      "imagen": "/Cursos/Kinesio/terapia-manual.webp"
     },
     {
       "title": "Esp. en Adicciones",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/adicciones.webp"
+      "imagen": "/Cursos/Acompañamiento/adicciones.webp"
     },
     {
       "title": "Esp. en Adolescencia",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/adolescencia.webp"
+      "imagen": "/Cursos/Acompañamiento/adolescencia.webp"
     },
     {
       "title": "Trastorno Alimenticios",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/alimenticios.webp"
+      "imagen": "/Cursos/Acompañamiento/alimenticios.webp"
     },
     {
       "title": "Esp. en Ansiedad y Depresión",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/ansiedad-depresion.webp"
+      "imagen": "/Cursos/Acompañamiento/ansiedad-depresion.webp"
     },
     {
       "title": "Autismo y TEA",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/autismo.webp"
+      "imagen": "/Cursos/Acompañamiento/autismo.webp"
     },
     {
       "title": "Esp. en Bulling Escolar",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/bulling-escolar.webp"
+      "imagen": "/Cursos/Acompañamiento/bulling-escolar.webp"
     },
     {
       "title": "Esp. en Ciberacoso",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/ciberacoso.webp"
+      "imagen": "/Cursos/Acompañamiento/ciberacoso.webp"
     },
     {
       "title": "Esp. en ESI",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/esi.webp"
+      "imagen": "/Cursos/Acompañamiento/esi.webp"
     },
     {
       "title": "Gerontológico",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/gerontologico-terapeutico.webp"
+      "imagen": "/Cursos/Acompañamiento/gerontologico-terapeutico.webp"
     },
     {
       "title": "Inclusión Escolar",
       "categoria":"Acompañamiento Terapéutico",
       "modalidad": "Online",
       "descripcion": "Formación y empleo",
-      "imagen": "../src/Cursos/Acompañamiento/inclusion-escolar.webp"
+      "imagen": "/Cursos/Acompañamiento/inclusion-escolar.webp"
     }
        
  ]
