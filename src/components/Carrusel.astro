@@ -48,8 +48,8 @@
         </div>
 
         <div class="nextPrevArrows">
-            <button class="prev p-2"> <Back /> </button>
-            <button class="next p-2"> <Next /> </button>
+            <button id="prev" class="prev p-2"> <Back /> </button>
+            <button id="next" class="next p-2"> <Next /> </button>
         </div>
     </div>
 
@@ -325,8 +325,8 @@
 </style>
 
 <script>
-let nextBtn = document.querySelector('.next')
-let prevBtn = document.querySelector('.prev')
+let nextBtn = document.getElementById('next')
+let prevBtn = document.getElementById('prev')
 
 let slider = document.querySelector('.slider')
 let sliderList = slider.querySelector('.slider .list')
@@ -336,15 +336,22 @@ let thumbnailItems = thumbnail.querySelectorAll('.item')
 thumbnail.appendChild(thumbnailItems[0])
 
 // Function for next button 
-nextBtn.onclick = function() {
-    moveSlider('next')
-}
+// nextBtn.onclick = function() {
+//     moveSlider('next')
+// }
 
+nextBtn.addEventListener('click', ()=> {
+    moveSlider('next')
+})
+
+prevBtn.addEventListener('click', ()=>{
+    moveSlider('prev')
+})
 
 // Function for prev button 
-prevBtn.onclick = function() {
-    moveSlider('prev')
-}
+// prevBtn.onclick = function() {
+//     moveSlider('prev')
+// }
 
 
 function moveSlider(direction) {
