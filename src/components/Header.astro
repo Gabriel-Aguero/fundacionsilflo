@@ -10,13 +10,13 @@ import MenuIcon from "../components/icons/menu.astro";
   <div class="max-w-7xl px-6 flex items-center justify-between md:mx-auto">
     <a href="/" class="flex items-center justify-center text-white space-x-2">
       <img
-        src="/logo-blanco.png"
-        class="h-16"
+        src="/logo-silflo.png"
+        class="h-20"
         alt="Logo de Fundación Silvia Flores"
       />
-      <span class="text-md text-center font-bold hidden">
+      <!-- <span class="text-md text-center font-bold hidden">
         Fundación Académica Silvia Flores
-      </span>
+      </span> -->
     </a>
 
     <!-- boton de menu responsive  -->
@@ -43,18 +43,24 @@ import MenuIcon from "../components/icons/menu.astro";
     <!-- Menú para móviles -->
     <div
       id="menu-open"
-      class="hidden top-20 fixed inset-0 bg-black/50 backdrop-blur-lg"
+      class="hidden top-28 fixed inset-0 bg-cyan-600/50 backdrop-blur-lg"
     >
       <div
         class="w-4/5 h-1/2 mx-auto flex flex-col items-center justify-center space-y-6"
       >
-        <ul class="text-white text-lg font-bold space-y-4 text-center">
-          <li><a href="/" class="block py-2">Home</a></li>
-          <li><a href="/la-fundacion" class="block py-2">La Fundación</a></li>
-          <li>
+        <ul class="w-full text-white text-lg font-bold space-y-4 text-center">
+          <li class="hover:bg-cyan-900">
+            <a href="/" class="block py-2">Home</a>
+          </li>
+          <li class="hover:bg-cyan-900">
+            <a href="/la-fundacion" class="block py-2">La Fundación</a>
+          </li>
+          <li class="hover:bg-cyan-900">
             <a href="/capacitaciones" class="block py-2">Capacitaciones</a>
           </li>
-          <li><a href="/novedades" class="block py-2">Novedades</a></li>
+          <li class="hover:bg-cyan-900">
+            <a href="/novedades" class="block py-2">Novedades</a>
+          </li>
         </ul>
       </div>
     </div>
