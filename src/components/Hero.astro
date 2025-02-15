@@ -1,8 +1,15 @@
+---
+import Volumen from "../components/icons/Volumen.astro";
+import VolumenOff from "../components/icons/VolumenOff.astro";
+---
+
 <section class="relative w-full bg-slate-900">
   <video
+    id="video"
     src="/Presentación.mp4"
     class="w-full shadow-lg opacity-30 object-cover"
     autoplay
+    muted
     loop
   >
   </video>
@@ -18,5 +25,42 @@
       Potenciamos el Crecimiento de las Personas Fomentando la Igualdad de
       Oportunidades !!!
     </p>
+    <button id="volumenOff">
+      <VolumenOff class="w-8 h-8 text-white" />
+    </button>
+    <button id="volumen" class="hidden">
+      <Volumen class="w-8 h-8 text-white" />
+    </button>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Document</title>
+      </head>
+      <body> </body>
+    </html>
   </div>
 </section>
+
+<script>
+  const volumenOff = document.getElementById("volumenOff");
+  const volumen = document.getElementById("volumen");
+  const video = document.getElementById("video") as HTMLVideoElement;
+
+  volumenOff.addEventListener("click", () => {
+    if (video.muted) {
+      video.muted = false;
+      volumenOff.classList.add("hidden");
+      volumen.classList.remove("hidden");
+    }
+
+    volumen.addEventListener("click", () => {
+      if (!video.muted) {
+        video.muted = true;
+        volumenOff.classList.remove("hidden");
+        volumen.classList.add("hidden");
+      }
+    });
+  });
+</script>
