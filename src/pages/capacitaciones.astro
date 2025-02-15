@@ -1,93 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Educacion from "../components/icons/Educacion.astro";
 import db from "../components/DB/db.json";
-
+import CapacitacionesCursos from "../components/CapacitacionesCursos.astro";
 const cursos = db;
-let filter = "";
-
-function cursosFiltrados() {
-  if (filter === "") {
-    return cursos;
-  } else {
-    return cursos.filter((curso) => curso.modalidad === filter);
-  }
-}
-
-function handleFilterChange(modalidad) {
-  return () => {
-    filter = modalidad;
-    console.log(filter);
-  };
-}
-
-function prueba() {
-  console.log("Hola mundo");
-}
 ---
 
 <Layout
   title="Capacitaciones"
   description="Todos los cursos y capacitaciones de la fundación Silvia Flores"
 >
-  <div class="container my-24 mx-auto md:px-6">
-    <div class="inline-flex rounded-md shadow-sm" role="group">
-      <button
-        type="button"
-        class="px-4 py-2 text-sm font-medium text-[#0b9ba0] bg-transparent border border-[#0b9ba0] rounded-s-lg hover:bg-[#0b9ba0] hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-[#0b9ba0] focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"                    
-      >
-        Presencial
-      </button>
-      <button
-        type="button"
-        class="px-4 py-2 text-sm font-medium text-[#0b9ba0] bg-transparent border-t border-b border-[#0b9ba0] hover:bg-[#0b9ba0] hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-[#0b9ba0] focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-      >
-        A Distancia
-      </button>
-      <button
-        type="button"
-        class="px-4 py-2 text-sm font-medium text-[#0b9ba0] bg-transparent border border-[#0b9ba0] rounded-e-lg hover:bg-[#0b9ba0] hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500 focus:bg-[#0b9ba0] focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700"
-        @onclick={handleFilterChange("Presencial")}
-      >
-        Todos
-      </button>
-    </div>
-    <section class="mb-32 text-center lg:text-left">
-      <h2 class="mb-12 text-center text-3xl font-bold text-[#0b9ba0]">
-        Nuestros cursos
-      </h2>
-
-      <div class="grid gap-12 lg:grid-cols-3">
-        {
-          cursosFiltrados().map((curso) => (
-            <div class="mb-12 lg:mb-0 shadow-md shadow-[#0b9ba0]">
-              <div
-                class="relative mb-6 overflow-hidden bg-cover bg-no-repeat transition duration-700 hover:ease-in-out hover:opacity-55 shadow-lg dark:shadow-black/20 bg-[50%]"
-                data-te-ripple-init
-                data-te-ripple-color="light"
-              >
-                <a href="#">
-                  <img src={curso.imagen} class="w-full" />
-                </a>
-              </div>
-              <div class="mb-4 flex items-center justify-start gap-14 text-sm font-medium text-[#032b30]">
-                <div class="flex gap-2 items-center justify-center px-2">
-                  <Educacion />
-                  {curso.modalidad}
-                </div>
-                <a href="https://wa.me/541139008840?text=Gracias por comunicarte con nosotros enviános tu mensaje, te respondemos a la brevedad.!!!">
-                  <span class="py-2 text-[#11b8bb] font-extrabold text-lg hover:text-[#0b9ba0]">
-                    Inscribirme
-                  </span>
-                </a>
-              </div>
-              {/* <p class="text-[#032b30] font-semibold text-xl">
-                {curso.descripcion}
-              </p> */}
-            </div>
-          ))
-        }
-      </div>
-    </section>
-  </div>
+  <CapacitacionesCursos />
 </Layout>

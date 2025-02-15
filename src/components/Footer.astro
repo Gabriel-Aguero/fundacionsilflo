@@ -10,114 +10,102 @@ import Whatsapp from "./icons/Whatsapp.astro";
 import Linkedin from "./icons/Linkedin.astro";
 ---
 
-<footer class="bg-gradient-to-r from-[#11b8bb] to-[#0b9ba0] py-20">
-  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+<footer
+  class="bg-gradient-to-r from-cyan-400 to-cyan-600 border-gray-200 dark:bg-gray-900 py-20"
+>
+  <div class="max-w-6xl px-10 mx-auto">
     <div class="flex flex-col items-center justify-center">
-      <div class="mb-2 md:mb-0">
-        <a href="https://fundacionsilflo.org" class="flex items-center">
-          <img
-            src="./Logo.png"
-            class="h-24 me-3"
-            alt="Logo de la Fundación Silvia Flores"
-          />
-        </a>
-      </div>
-
-      <div
-        class="flex flex-col mt-10 w-full gap-10 justify-between items-center text-center sm:flex sm:flex-row"
-      >
-        <div>
-          <h2
-            class="mb-6 text-xl font-bold text-[#032b30] uppercase"
-          >
-            Contacto
-          </h2>
-          <ul class="text-white dark:text-white font-medium">
-            <a href="https://wa.me/541139008840?text=Gracias por comunicarte con nosotros enviános tu mensaje, te respondemos a la brevedad.!!!"
-               target="_blank">
-              <li class="mb-4 flex justify-center items-center gap-2">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="flex flex-col gap-4 items-center justify-center">
+          <h2 class="text-xl font-bold text-gray-900">Contacto</h2>
+          <div class="flex flex-col gap-2">
+            <a
+              href="https://wa.me/541139008840?text=Gracias por comunicarte con nosotros enviános tu mensaje, te respondemos a la brevedad.!!!"
+              target="_blank"
+            >
+              <div
+                class="flex items-center justify-center gap-2 text-white font-medium text-md"
+              >
                 <Whatsapp class="w-6 h-6" />
                 <span>11-3900-8840</span>
-              </li>
+              </div>
             </a>
-            <li>
-              <span>Montevideo 496 5to Piso Of. 51 C.A.B.A</span>
-            </li>
-          </ul>
+            <span class="text-white font-medium text-md"
+              >Montevideo 496 5to Piso Of. 51 C.A.B.A</span
+            >
+          </div>
         </div>
 
-        <div>
-          <h2
-            class="mb-6 text-xl font-bold text-[#032b30] uppercase"
-          >
+        <div class="flex flex-col gap-4 items-center justify-center">
+          <h2 class="text-xl font-bold text-gray-900">
             Nuestras Redes Sociales
           </h2>
-          <div class="flex mb-10 items-center justify-center">
-            <a href="https://www.linkedin.com/in/fundaci%C3%B3n-acad%C3%A9mica-silvia-flores-637731309/" target="_blank"
-               class="text-white hover:text-slate-600">
-              <Linkedin class="w-8 h-8"/>
-              <span class="sr-only">Linkedin</span>
+          <div class="flex md:flex-row gap-4 justify-center items-center mb-6">
+            <a
+              href="https://www.linkedin.com/in/fundaci%C3%B3n-acad%C3%A9mica-silvia-flores-637731309/"
+              target="_blank"
+              class="text-white hover:text-slate-600"
+            >
+              <Linkedin class="w-8 h-8" />
             </a>
             <a
               href="https://www.instagram.com/fundacion_academica_silflo/"
-              class="text-white hover:text-slate-600 ms-5"
+              class="text-white hover:text-slate-600"
             >
-              <Instagram class="w-8 h-8"/>
-              <span class="sr-only">Instagram</span>
+              <Instagram class="w-8 h-8" />
             </a>
             <a
               href="https://www.tiktok.com/@fundacionsilflo"
-              class="text-white hover:text-slate-600 ms-5"
+              class="text-white hover:text-slate-600"
             >
-              <TikTok class="w-8 h-8"/>
-              <span class="sr-only">Tiktok</span>
+              <TikTok class="w-8 h-8" />
             </a>
             <a
               href="https://www.youtube.com/@fundacionsilflo"
-              class="text-white hover:text-slate-600 ms-5"
+              class="text-white hover:text-slate-600"
             >
               <YouTube class="w-8 h-8" />
-              <span class="sr-only">You Tube</span>
             </a>
           </div>
         </div>
 
-        <div>
-          <h2
-            class="mb-2 text-xl font-bold text-[#032b30] uppercase"
-          >
-            Legal
-          </h2>
-          <ul class="text-white dark:text-white font-medium">
-            <li class="mb-4">
-              <a href="https://flowbite.com/" class="hover:underline"
-                >Política de privacidad</a
-              >
-            </li>
-            <li>
-              <a href="https://tailwindcss.com/" class="hover:underline"
-                >Términos &amp; Condiciones</a
-              >
-            </li>
-          </ul>
+        <div class="flex flex-col gap-4 items-center justify-center">
+          <h2 class="text-xl font-bold text-gray-900">Legal</h2>
+          <div class="flex flex-col gap-2">
+            <a href="/" class="hover:underline text-white font-medium"
+              >Política de privacidad</a
+            >
+            <a href="/" class="hover:underline text-white font-medium"
+              >Términos &amp; Condiciones</a
+            >
+          </div>
         </div>
       </div>
     </div>
 
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-white lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-around">
+    <hr class="border-gray-200 mt-4 py-2 dark:border-white" />
+    <div class="flex flex-col md:flex-row gap-2 justify-between items-center">
       <span
-        class="flex flex-col items-center justify-center text-sm text-[#032b30] font-medium sm:text-center"
+        class="flex flex-col items-center justify-center text-lg text-gray-900 font-bold"
       >
         © 2023 Fundación Académica Silvia Flores.
       </span>
       <div
-        class="flex mt-2 gap-2 text-white text-center items-center justify-center"
+        class="flex flex-col md:flex-row gap-2 text-white text-center items-center justify-center"
       >
-        <Codigo class="text-[#032b30]" />
-        <spa class="text-sm text-[#032b30] sm:text-center font-medium"
-          >Creado por Gabriel Agüero</spa
+        <spa
+          class="text-lg flex items-center justify-center gap-2 text-white font-bold"
         >
+          <Codigo class="text-white font-semibold text-xl" />
+          Creado con ❤️​ por
+          <a
+            href="https://www.linkedin.com/in/gabrielhaguero/"
+            target="_blank"
+            class="text-slate-950 hover:text-slate-600"
+          >
+            Gabriel Agüero
+          </a>
+        </spa>
       </div>
     </div>
   </div>

@@ -1,22 +1,21 @@
 ---
 import Check from "./icons/Check.astro";
-import Donaciones from "../components/DB/dbDonaciones.json"
-
+import Donaciones from "../components/DB/dbDonaciones.json";
 ---
 
 <section
-  class="bg-white text-white flex flex-col justify-center items-center"
+  class="bg-[#0b9ba0]/20 text-white flex flex-col justify-center items-center mt-10"
   id="novedades"
 >
   <div
     class="flex flex-col justify-center items-center max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
   >
-    <div class="flex flex-col">
+    <div class="flex flex-col gap-4">
       <h2 class="text-3xl font-bold sm:text-4xl text-gray-900">
         Nodedades sobre la Fundación
       </h2>
 
-      <p class="mt-4 text-gray-900">
+      <p class="text-gray-900/70 text-xl font-medium text-balance">
         Bienvenido a nuestra sección de novedades, donde te mantendremos al día
         con las últimas noticias y eventos de la Fundación SILFLO. Aquí
         encontrarás información emocionante sobre nuestros egresados destacados,
@@ -28,10 +27,10 @@ import Donaciones from "../components/DB/dbDonaciones.json"
         promover la educación en salud y hacer una diferencia positiva en
         nuestras comunidades!
       </p>
-      <div class="mt-12">
+      <div class="mt-4">
         <a
           href="/novedades"
-          class="inline-block rounded  px-12 py-3 text-sm font-medium
+          class="inline-block rounded px-12 py-3 text-sm font-medium
            text-white transition bg-[#11b8bb] hover:bg-[#0b9ba0]"
         >
           Más sobre nosotros
@@ -40,7 +39,7 @@ import Donaciones from "../components/DB/dbDonaciones.json"
     </div>
 
     <div
-      class="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
+      class="py-10 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
     >
       {
         Donaciones.map((data) => (
@@ -50,9 +49,11 @@ import Donaciones from "../components/DB/dbDonaciones.json"
             </span>
 
             <div>
-              <h2 class="text-lg font-bold text-gray-900">{data.titulo}</h2>
+              <h2 class="text-lg font-bold text-gray-900">{data.title}</h2>
 
-              <p class="mt-1 text-sm text-gray-900">{data.descripcion}</p>
+              <p class="mt-1 text-sm text-gray-600 text-balance font-medium">
+                {data.descripcion}
+              </p>
             </div>
           </div>
         ))

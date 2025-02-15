@@ -8,43 +8,34 @@ import CoinOff from "../components/icons/CoinOff.astro";
 import Iniciativas from "../components/icons/Iniciativas.astro";
 import Galeria from "../components/Galeria.astro";
 import dbAbout from "../components/DB/dbAbout.json";
-
 ---
 
 <Layout
   title="la-fundacion"
   description="Todo lo que necesitas saber sobre la fundacion academica, silvia flores, con sus cursos, jornadas, simulacion clínica"
 >
-  <section>
-    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-10 lg:px-8">
-      <div class="max-w-3xl">
-        <h2 class="text-3xl font-bold sm:text-4xl text-[#0f5c60]">
-          Todo lo que necesitas saber sobre La Fundación Académica Silvia Flores
-        </h2>
+  <article class="max-w-6xl mt-20 px-10 mx-auto">
+    <div class="flex flex-col gap-4 px-4 py-10 mx-auto">
+      <h2 class="text-3xl font-bold text-balance text-[#0f5c60] py-10">
+        Todo lo que necesitas saber sobre La Fundación Académica Silvia Flores
+      </h2>
+      <div class="w-full flex flex-col md:flex-row gap-4 py10">
+        <img
+          alt="Foto de la fundacion silvia flores, dando un curso"
+          src="/images/img-1.png"
+          class="relative h-96 w-96 object-cover object-center"
+        />
+        <p class="text-xl font-bold text-gray-700/90 text-balance px-5">
+          La Fundación SILFLO promueve la Educación en el ámbito de la Salud.
+          Contribuimos al desarrollo del País a través del desarrollo de las
+          personas, Promoviendo igualdad de oportunidades. Un equipo
+          comprometido de trabajo, Potenciando la Educación en Salud. Creada en
+          el año 2023, es una entidad sin ánimo de lucro con la vocación de ser
+          un lugar de encuentro para los distintos sectores sociales
+          involucrados en el mundo sanitario.
+        </p>
       </div>
-
-      <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-        <div class="relative h-64 overflow-hidden sm:h-80 lg:h-full">
-          <img
-            alt="Foto de la fundacion silvia flores, dando un curso"
-            src="/images/img-1.png"
-            class="absolute inset-0 h-full w-full object-cover"
-          />
-        </div>
-
-        <div class="lg:py-16">
-          <article class="space-y-4 text-xl font-bold text-[#0b9ba0]">
-            <p>
-              La Fundación SILFLO promueve la Educación en el ámbito de la
-              Salud. Contribuimos al desarrollo del País a través del desarrollo
-              de las personas, Promoviendo igualdad de oportunidades. Un equipo
-              comprometido de trabajo, Potenciando la Educación en Salud. Creada
-              en el año 2023, es una entidad sin ánimo de lucro con la vocación
-              de ser un lugar de encuentro para los distintos sectores sociales
-              involucrados en el mundo sanitario.
-            </p>
-          </article>
-        </div>
+      <div class="w-full flex flex-col md:flex-row gap-4 py10">
         <iframe
           class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:mt-10 sm:h-96 shadow-xl"
           src="https://www.youtube.com/embed/Du6Urp-1hBc?si=-Ria8-hb5mi_0pgJ"
@@ -67,39 +58,37 @@ import dbAbout from "../components/DB/dbAbout.json";
         </iframe>
       </div>
     </div>
-  </section>
 
-  <section
-    class="text-gray-700 bg-gradient-to-r from-[#f0fdfc] to-[#cbfcf8] pb-10"
-  >
-    <div
-      class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4"
-    >
-      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {
-          dbAbout.map((item) => (
-            <a
-              class="block rounded-xl border border-[#0d7378] p-8 shadow-xl transition duration-700 hover:scale-110 shadow-[#0d7378] hover:shadow-[#032b30]"
-              href="#"
-            >
-              {item.icon === "Mision" && <Mision />}
-              {item.icon === "Filosofia" && <Filosofia />}
-              {item.icon === "Educacion" && <Educacion />}
-              {item.icon === "Oportunidades" && <Oportunidades />}
-              {item.icon === "CoinOff" && <CoinOff />}
-              {item.icon === "Iniciativas" && <Iniciativas />}
-              <h2 class="mt-4 text-xl font-bold text-[#032b30]">
-                {item.titulo}
-              </h2>
-              <p class="mt-1 text-md text-[#0f5c60] font-semibold">
-                {item.descripcion}
-              </p>
-            </a>
-          ))
-        }       
+    <article class="text-gray-700 pb-10">
+      <div
+        class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4"
+      >
+        <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {
+            dbAbout.map((item) => (
+              <a
+                class="block rounded-xl border border-cyan-300 p-8 shadow-xl transition duration-700 hover:scale-110 shadow-[#0d7378] hover:shadow-[#032b30]"
+                href="#"
+              >
+                {item.icon === "Mision" && <Mision />}
+                {item.icon === "Filosofia" && <Filosofia />}
+                {item.icon === "Educacion" && <Educacion />}
+                {item.icon === "Oportunidades" && <Oportunidades />}
+                {item.icon === "CoinOff" && <CoinOff />}
+                {item.icon === "Iniciativas" && <Iniciativas />}
+                <h2 class="mt-4 text-xl font-bold text-[#032b30]">
+                  {item.titulo}
+                </h2>
+                <p class="mt-1 text-md text-[#0f5c60] font-semibold">
+                  {item.descripcion}
+                </p>
+              </a>
+            ))
+          }
+        </div>
       </div>
-    </div>
-  </section>
+    </article>
 
-  <Galeria />
+    <Galeria />
+  </article>
 </Layout>

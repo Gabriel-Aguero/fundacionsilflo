@@ -2,25 +2,30 @@
 import MenuIcon from "../components/icons/menu.astro";
 ---
 
-<nav class="bg-gradient-to-r from-[#11b8bb] to-[#0b9ba0] border-gray-200 dark:bg-gray-900 py-10">
-  <div
-    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
-  >
-    <a href="/" class="flex items-center mx-5 space-x-3 rtl:space-x-reverse">
-      <img src="/Logo.png" class="h-20" alt="Logo de Fundación Silvia Flores" />
+<!-- class="bg-gradient-to-b from-cyan-400 to-cyan-600 border-gray-200 dark:bg-gray-900 py-5 sticky top-0 z-50" -->
+<nav
+  id="navbar"
+  class="fixed top-0 left-0 w-full bg-cyan-500/50 transition-all duration-300 z-50 py-5"
+>
+  <div class="max-w-7xl px-6 flex items-center justify-between md:mx-auto">
+    <a href="/" class="flex items-center justify-center text-white space-x-2">
+      <img
+        src="/logo-blanco.png"
+        class="h-16"
+        alt="Logo de Fundación Silvia Flores"
+      />
+      <span class="text-md text-center font-bold hidden">
+        Fundación Académica Silvia Flores
+      </span>
     </a>
+
+    <!-- boton de menu responsive  -->
     <button
       id="menu-button"
-      data-collapse-toggle="navbar-default"
-      type="button"
-      class="inline-flex items-center p-2 mx-5 w-10 h-10 justify-center text-sm text-slate-200 rounded-lg md:hidden"
-      aria-controls="navbar-default"
-      aria-expanded="false"
+      class="text-white flex items-center w-10 h-10 md:hidden"
     >
-      <span class="sr-only">Open main menu</span>
       <svg
-        class="w-5 h-5"
-        aria-hidden="true"
+        class="w-6 h-6"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 17 14"
@@ -33,60 +38,88 @@ import MenuIcon from "../components/icons/menu.astro";
           d="M1 1h15M1 7h15M1 13h15"></path>
       </svg>
     </button>
-    <!-- <MenuIcon class="h-10 w-10 mx-5 text-white md:hidden" id="navbar-menu" /> -->
 
-    <div class="hidden w-full md:block md:w-auto" id="menu-open">
-      <ul
-        class="font-semibold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-150 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-200 md:dark:bg-gray-200 dark:border-gray-200"
+    <!-- boton de menu mobile  -->
+    <!-- Menú para móviles -->
+    <div
+      id="menu-open"
+      class="hidden top-20 fixed inset-0 bg-black/50 backdrop-blur-lg"
+    >
+      <div
+        class="w-4/5 h-1/2 mx-auto flex flex-col items-center justify-center space-y-6"
       >
-        <li
-          class="border-2 border-transparent p-2 hover:md:border-b-gray-100 border-b-4"
-        >
+        <ul class="text-white text-lg font-bold space-y-4 text-center">
+          <li><a href="/" class="block py-2">Home</a></li>
+          <li><a href="/la-fundacion" class="block py-2">La Fundación</a></li>
+          <li>
+            <a href="/capacitaciones" class="block py-2">Capacitaciones</a>
+          </li>
+          <li><a href="/novedades" class="block py-2">Novedades</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hidden md:flex md:mx-auto items-center justify-center w-full">
+      <ul
+        class="flex flex-col items-center justify-center p-4 srt: md:p-0 md:flex-row md:space-x-8 font-semibold text-white"
+      >
+        <li>
           <a
             href="/"
-            class="block py-2 px-3 text-xl font-bold text-[#f0fdfc] rounded md:bg-transparent md:p-0"
+            class="block py-2 px-4 text-xl font-bold transition duration-300 hover:bg-white hover:text-cyan-600 rounded-lg"
             aria-current="page">Home</a
           >
         </li>
-        <li
-          class="border-2 border-transparent p-2 hover:md:border-b-gray-100 border-b-4"
-        >
+        <li>
           <a
             href="/la-fundacion"
-            class="block py-2 px-3 text-xl font-bold text-[#f0fdfc] rounded md:bg-transparent md:p-0"
+            class="block py-2 px-4 text-xl font-bold transition duration-300 hover:bg-white hover:text-cyan-600 rounded-lg"
             >La Fundación</a
           >
         </li>
-        <li
-          class="border-2 border-transparent p-2 hover:md:border-b-gray-100 border-b-4"
-        >
+        <li>
           <a
             href="/capacitaciones"
-            class="block py-2 px-3 text-xl font-bold text-[#f0fdfc] rounded md:bg-transparent md:p-0"
+            class="block py-2 px-4 text-xl font-bold transition duration-300 hover:bg-white hover:text-cyan-600 rounded-lg"
           >
             Capacitaciones</a
           >
         </li>
-        <li
-          class="border-2 border-transparent p-2 hover:md:border-b-gray-100 border-b-4"
-        >
+        <li>
           <a
             href="/novedades"
-            class="block py-2 px-3 text-xl font-bold text-[#f0fdfc] rounded md:bg-transparent md:p-0"
+            class="block py-2 px-4 text-xl font-bold transition duration-300 hover:bg-white hover:text-cyan-600 rounded-lg"
           >
             Novedades</a
           >
-        </li>       
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
 <script>
-  const menuButton = document.getElementById("menu-button");
-  const menuOpen = document.getElementById("menu-open");
+  document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("navbar");
+    const menuButton = document.getElementById("menu-button");
+    const menuOpen = document.getElementById("menu-open");
+    const navbarHeight = navbar.offsetHeight;
 
-  menuButton.addEventListener("click", () => {
-    menuOpen.classList.toggle("hidden");
+    // Navbar scroll
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > navbarHeight) {
+        navbar.classList.remove("bg-cyan-500/50");
+        navbar.classList.add("bg-cyan-600/90");
+      } else {
+        navbar.classList.remove("bg-cyan-600/90");
+        navbar.classList.add("bg-cyan-500/50");
+      }
+    });
+
+    // Mostrar u ocultar el menú movile
+
+    menuButton.addEventListener("click", () => {
+      menuOpen.classList.toggle("hidden");
+    });
   });
 </script>
